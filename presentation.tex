@@ -176,7 +176,7 @@ root@foobar:/# uname -a
        \item \texttt{docker inspect container-name}
        \item \texttt{docker inspect mysql | grep `"IPAddress"' | awk `\{print \$2\}'}
        \begin{itemize}
-           \item Container DNS "just works" (if you do it right)
+           \item Container DNS ``just works'' (if you do it right)
        \end{itemize}
    \end{itemize}
 \end{frame}
@@ -207,7 +207,7 @@ https://pastebin.com/8vp9PSCw
 \subsection{Cleaning Up}
 \begin{frame}{Cleaning Up}
     \begin{itemize}
-        \item \texttt{docker rm -f \$(docker ps -qa)} -OR- \texttt{docker stop \$(docker ps -q) && docker rm \$(docker ps -qa)}
+        \item \texttt{docker rm -f \$(docker ps -qa)} -OR- \texttt{docker stop \$(docker ps -q) \&\& docker rm \$(docker ps -qa)}
         \item \texttt{docker system prune}
         \begin{itemize}
             \item Removes all stopped containers (like above)
